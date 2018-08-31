@@ -1,0 +1,12 @@
+C:\Users\Michael Gladstein\source\repos\ParserClassLib\ParserClassLib\obj\Debug\ActivityDesigner1.baml
+C:\Users\Michael Gladstein\source\repos\ParserClassLib\ParserClassLib\obj\Debug\ActivityDesigner1.g.cs
+C:\Users\Michael Gladstein\source\repos\ParserClassLib\ParserClassLib\obj\Debug\ParserClassLib_MarkupCompile.cache
+C:\Users\Michael Gladstein\source\repos\ParserClassLib\ParserClassLib\obj\Debug\ParserClassLib.g.resources
+C:\Users\Michael Gladstein\source\repos\ParserClassLib\ParserClassLib\obj\Debug\Roboyo.Tools.Activities.DateParser.csproj.CoreCompileInputs.cache
+C:\Users\Michael Gladstein\source\repos\ParserClassLib\ParserClassLib\obj\Debug\ParserClassLib.dll
+C:\Users\Michael Gladstein\source\repos\ParserClassLib\ParserClassLib\obj\Debug\ParserClassLib.pdb
+C:\Users\Michael Gladstein\source\repos\ParserClassLib\ParserClassLib\bin\Debug\ParserClassLib.dll
+C:\Users\Michael Gladstein\source\repos\ParserClassLib\ParserClassLib\bin\Debug\ParserClassLib.pdb
+C:\Users\Michael Gladstein\source\repos\ParserClassLib\ParserClassLib\bin\Debug\Chronic.dll
+C:\Users\Michael Gladstein\source\repos\ParserClassLib\ParserClassLib\obj\Debug\Roboyo.Tools.Activities.DateParser.csproj.CopyComplete
+C:\Users\Michael Gladstein\source\repos\ParserClassLib\ParserClassLib\obj\Debug\Roboyo.Tools.Activities.DateParser.csprojAssemblyReference.cache

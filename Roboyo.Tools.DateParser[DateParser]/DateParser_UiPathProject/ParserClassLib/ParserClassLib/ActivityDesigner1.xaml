@@ -1,0 +1,65 @@
+﻿<sap:ActivityDesigner x:Class="Roboyo.Tools.Activities.DateParser.ActivityDesigner1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:s="clr-namespace:System;assembly=mscorlib"
+    xmlns:sap="clr-namespace:System.Activities.Presentation;assembly=System.Activities.Presentation"
+    xmlns:sapv="clr-namespace:System.Activities.Presentation.View;assembly=System.Activities.Presentation"
+    xmlns:sapc="clr-namespace:System.Activities.Presentation.Converters;assembly=System.Activities.Presentation"
+    xmlns:Model="clr-namespace:System.Activities.Presentation.Model;assembly=System.Activities.Presentation"
+    xmlns:MyActivityLibrary="clr-namespace:Roboyo.Tools.Activities.DateParser;assembly=DateParser">
+
+    <sap:ActivityDesigner.Resources>
+        <ResourceDictionary x:Uid="ResourceDictionary_1">
+            <sapc:ArgumentToExpressionConverter x:Key="ArgumentToExpressionConverter" />
+            <sapc:ModelToObjectValueConverter x:Key="ModelToObjectValueConverter" />
+
+            <DataTemplate x:Key="Collapsed">
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" TextBlock.FontStyle="Italic" TextBlock.Foreground="#FF6D6D6D">Double-click to view</TextBlock>
+            </DataTemplate>
+
+            <DataTemplate x:Key="Expanded">
+                <DockPanel LastChildFill="True" HorizontalAlignment="Center" Width="300">
+                    <DockPanel DockPanel.Dock="Top" LastChildFill="True">
+                        <DockPanel LastChildFill="True">
+                            <StackPanel DockPanel.Dock="Left">
+                                <Label Name="InStringLabel" Content="Input" Margin="0,1,0,0" />
+                            </StackPanel>
+                        </DockPanel>
+                        <StackPanel DockPanel.Dock="Right">
+                            <sapv:ExpressionTextBox Name="InPutTextBox" Margin="0,5,0,0" DockPanel.Dock="Left" ExpressionType="{x:Type s:String}" HintText="Text must be quoted" OwnerActivity="{Binding Path=ModelItem}" Expression="{Binding Path=ModelItem.inString, Converter={StaticResource ArgumentToExpressionConverter}, ConverterParameter=In, Mode=TwoWay}" MaxLines="1"  />
+                        </StackPanel>
+                    </DockPanel>
+                </DockPanel>
+            </DataTemplate>
+
+            <Style x:Key="ExpandOrCollapsedStyle" TargetType="{x:Type ContentPresenter}">
+                <Setter Property="ContentTemplate" Value="{DynamicResource Expanded}" />
+                <Style.Triggers>
+                    <DataTrigger Binding="{Binding Path=ShowExpanded}" Value="false">
+                        <Setter Property="ContentTemplate" Value="{DynamicResource Collapsed}" />
+                    </DataTrigger>
+                </Style.Triggers>
+            </Style>
+
+        </ResourceDictionary>
+    </sap:ActivityDesigner.Resources>
+
+    <sap:ActivityDesigner.Icon>
+        <DrawingBrush>
+            <DrawingBrush.Drawing>
+                <ImageDrawing>
+                    <ImageDrawing.Rect>
+                        <Rect Location="0,0" Size="16,16"></Rect>
+                    </ImageDrawing.Rect>
+                    <ImageDrawing.ImageSource>
+                        <BitmapImage UriSource="https://www.roboyo.de/cms/wp-content/uploads/2015/11/Roboyo-Logo-quadrat.png"></BitmapImage>
+                    </ImageDrawing.ImageSource>
+                </ImageDrawing>
+            </DrawingBrush.Drawing>
+        </DrawingBrush>
+    </sap:ActivityDesigner.Icon>
+    
+    <Grid>
+        <ContentPresenter Style="{DynamicResource ExpandOrCollapsedStyle}" Content="{Binding}" />
+    </Grid>
+</sap:ActivityDesigner>

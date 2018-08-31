@@ -1,0 +1,8 @@
+C:\Users\Michael Gladstein\source\repos\ParserClassLib\ParserClassLib\bin\Debug\ParserClassLib.dll
+C:\Users\Michael Gladstein\source\repos\ParserClassLib\ParserClassLib\bin\Debug\ParserClassLib.pdb
+C:\Users\Michael Gladstein\source\repos\ParserClassLib\ParserClassLib\bin\Debug\Chronic.dll
+C:\Users\Michael Gladstein\source\repos\ParserClassLib\ParserClassLib\obj\Debug\ParserClassLib.csprojAssemblyReference.cache
+C:\Users\Michael Gladstein\source\repos\ParserClassLib\ParserClassLib\obj\Debug\ParserClassLib.csproj.CoreCompileInputs.cache
+C:\Users\Michael Gladstein\source\repos\ParserClassLib\ParserClassLib\obj\Debug\ParserClassLib.csproj.CopyComplete
+C:\Users\Michael Gladstein\source\repos\ParserClassLib\ParserClassLib\obj\Debug\ParserClassLib.dll
+C:\Users\Michael Gladstein\source\repos\ParserClassLib\ParserClassLib\obj\Debug\ParserClassLib.pdb
